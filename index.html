@@ -1,158 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Hartford Logic LLC</title>
 
 <style>
 :root {
-    --bg: #050506;
-    --panel: #0a0a0c;
-    --text: #f2efe9;
-    --muted: #a8a19a;
-    --gold: #c9a46a;
-    --line: rgba(201, 164, 106, 0.28);
+  --bg: #050505;
+  --panel: #090807;
+  --gold: #c9a66b;
+  --gold-soft: #ead8ad;
+  --text: #f4efe4;
+  --muted: #aaa198;
+  --line: rgba(201,166,107,.28);
 }
 
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
-    margin: 0;
-    min-height: 100vh;
-    background:
-        radial-gradient(circle at center top, rgba(201,164,106,0.10), transparent 34%),
-        radial-gradient(circle at center, rgba(255,255,255,0.035), transparent 45%),
-        var(--bg);
-    color: var(--text);
-    font-family: Georgia, "Times New Roman", serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(201,166,107,.16), transparent 28%),
+    linear-gradient(180deg, #070707 0%, #020202 100%);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
 }
 
-.wrap {
-    width: min(920px, 92vw);
-    padding: 56px 28px;
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 44px 18px;
 }
 
 .card {
-    border: 1px solid var(--line);
-    background:
-        linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.008)),
-        rgba(5,5,6,0.92);
-    border-radius: 28px;
-    padding: 56px 38px 46px;
-    box-shadow:
-        0 30px 90px rgba(0,0,0,0.65),
-        inset 0 0 40px rgba(255,255,255,0.018);
+  width: min(760px, 100%);
+  padding: clamp(28px, 6vw, 56px);
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.008)),
+    rgba(6,6,6,.92);
+  box-shadow: 0 30px 90px rgba(0,0,0,.7);
+  text-align: center;
 }
 
-.logo-shell {
-    width: min(440px, 86vw);
-    margin: 0 auto 34px;
-    padding: 10px;
-    border-radius: 24px;
-    background: radial-gradient(circle, rgba(201,164,106,0.10), transparent 68%);
+.logo-wrap {
+  width: min(360px, 76vw);
+  margin: 0 auto 28px;
 }
 
 .logo {
-    width: 100%;
-    display: block;
-    border-radius: 18px;
-    mix-blend-mode: screen;
-    filter: drop-shadow(0 0 22px rgba(201,164,106,0.16));
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 0 44px rgba(201,166,107,.14);
 }
 
 .badge {
-    display: inline-block;
-    padding: 9px 18px;
-    border-radius: 999px;
-    border: 1px solid rgba(201,164,106,0.35);
-    color: #d9c29a;
-    background: rgba(201,164,106,0.06);
-    font-size: 0.78rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    margin-bottom: 28px;
+  display: inline-block;
+  margin: 6px 0 34px;
+  padding: 12px 22px;
+  border: 1px solid rgba(201,166,107,.38);
+  border-radius: 999px;
+  color: var(--gold-soft);
+  background: rgba(201,166,107,.055);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: .76rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
 }
 
 h1 {
-    margin: 0;
-    font-size: clamp(2.4rem, 6vw, 4.6rem);
-    line-height: 0.95;
-    font-weight: 500;
-    letter-spacing: -0.045em;
+  margin: 0;
+  font-size: clamp(2.55rem, 10vw, 5rem);
+  line-height: .92;
+  font-weight: 500;
+  letter-spacing: -.055em;
 }
 
-.accent {
-    color: #f8e6bd;
-}
-
-.tagline {
-    max-width: 720px;
-    margin: 30px auto 0;
-    color: var(--muted);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    line-height: 1.65;
+h1 span {
+  color: var(--gold-soft);
 }
 
 .rule {
-    width: 160px;
-    height: 1px;
-    margin: 34px auto;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  width: min(240px, 62%);
+  height: 1px;
+  margin: 36px auto 28px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.copy {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(1rem, 3.6vw, 1.18rem);
+  line-height: 1.6;
 }
 
 .footer {
-    color: #6f6962;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    font-size: 0.82rem;
-    letter-spacing: 0.04em;
+  margin-top: 36px;
+  color: #6f675e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: .82rem;
+  letter-spacing: .04em;
 }
 
-@media (max-width: 600px) {
-    .card {
-        padding: 36px 20px 34px;
-        border-radius: 20px;
-    }
+@media (max-width: 520px) {
+  .page {
+    align-items: flex-start;
+    padding: 26px 14px;
+  }
 
-    .logo-shell {
-        width: 300px;
-    }
+  .card {
+    border-radius: 24px;
+    padding: 28px 20px 34px;
+  }
+
+  .logo-wrap {
+    width: min(300px, 82vw);
+    margin-bottom: 24px;
+  }
+
+  .badge {
+    margin-bottom: 30px;
+    padding: 11px 18px;
+    font-size: .7rem;
+    letter-spacing: .14em;
+  }
+
+  h1 {
+    font-size: clamp(2.75rem, 13vw, 4.1rem);
+  }
+
+  .copy {
+    font-size: 1rem;
+  }
 }
 </style>
 </head>
 
 <body>
-    <main class="wrap">
-        <section class="card">
-            <div class="logo-shell">
-                <img src="logo.png?v=3" class="logo" alt="Hartford Logic LLC logo">
-            </div>
+  <main class="page">
+    <section class="card">
+      <div class="logo-wrap">
+        <img src="logo.png?v=4" class="logo" alt="Hartford Logic LLC logo">
+      </div>
 
-            <div class="badge">Private Development Underway</div>
+      <div class="badge">Private Development Underway</div>
 
-            <h1>
-                Structured Systems.<br>
-                <span class="accent">Defensible Logic.</span>
-            </h1>
+      <h1>
+        Structured<br>
+        Systems.<br>
+        <span>Defensible<br>Logic.</span>
+      </h1>
 
-            <div class="rule"></div>
+      <div class="rule"></div>
 
-            <div class="tagline">
-                Advanced systems research and development focused on verification frameworks,
-                resilient architectures, and structured analysis technologies.
-            </div>
+      <div class="copy">
+        Advanced systems research and development focused on verification frameworks,
+        resilient architectures, and structured analysis technologies.
+      </div>
 
-            <div class="footer">
-                © 2026 Hartford Logic LLC
-            </div>
-        </section>
-    </main>
+      <div class="footer">
+        © 2026 Hartford Logic LLC
+      </div>
+    </section>
+  </main>
 </body>
 </html>
