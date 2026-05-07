@@ -6,85 +6,153 @@
 <title>Hartford Logic LLC</title>
 
 <style>
+:root {
+    --bg: #050506;
+    --panel: #0a0a0c;
+    --text: #f2efe9;
+    --muted: #a8a19a;
+    --gold: #c9a46a;
+    --line: rgba(201, 164, 106, 0.28);
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    background: #0b0b0d;
-    color: #e8e8e8;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at center top, rgba(201,164,106,0.10), transparent 34%),
+        radial-gradient(circle at center, rgba(255,255,255,0.035), transparent 45%),
+        var(--bg);
+    color: var(--text);
+    font-family: Georgia, "Times New Roman", serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     text-align: center;
 }
 
-.container {
-    max-width: 800px;
-    padding: 40px;
+.wrap {
+    width: min(920px, 92vw);
+    padding: 56px 28px;
+}
+
+.card {
+    border: 1px solid var(--line);
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.008)),
+        rgba(5,5,6,0.92);
+    border-radius: 28px;
+    padding: 56px 38px 46px;
+    box-shadow:
+        0 30px 90px rgba(0,0,0,0.65),
+        inset 0 0 40px rgba(255,255,255,0.018);
+}
+
+.logo-shell {
+    width: min(440px, 86vw);
+    margin: 0 auto 34px;
+    padding: 10px;
+    border-radius: 24px;
+    background: radial-gradient(circle, rgba(201,164,106,0.10), transparent 68%);
 }
 
 .logo {
-    width: 260px;
-    margin-bottom: 30px;
+    width: 100%;
+    display: block;
+    border-radius: 18px;
+    mix-blend-mode: screen;
+    filter: drop-shadow(0 0 22px rgba(201,164,106,0.16));
 }
 
 .badge {
     display: inline-block;
-    padding: 8px 16px;
-    border-radius: 20px;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
-    color: #9fd3ff;
-    font-size: 0.9rem;
-    margin-bottom: 25px;
+    padding: 9px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(201,164,106,0.35);
+    color: #d9c29a;
+    background: rgba(201,164,106,0.06);
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
 }
 
 h1 {
-    font-size: 2.4rem;
-    font-weight: 600;
-    margin-bottom: 10px;
+    margin: 0;
+    font-size: clamp(2.4rem, 6vw, 4.6rem);
+    line-height: 0.95;
+    font-weight: 500;
+    letter-spacing: -0.045em;
+}
+
+.accent {
+    color: #f8e6bd;
 }
 
 .tagline {
-    font-size: 1.2rem;
-    color: #a0a0a0;
-    margin-bottom: 30px;
-    line-height: 1.5;
+    max-width: 720px;
+    margin: 30px auto 0;
+    color: var(--muted);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.65;
+}
+
+.rule {
+    width: 160px;
+    height: 1px;
+    margin: 34px auto;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
 
 .footer {
-    margin-top: 40px;
-    font-size: 0.85rem;
-    color: #666;
+    color: #6f6962;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 36px 20px 34px;
+        border-radius: 20px;
+    }
+
+    .logo-shell {
+        width: 300px;
+    }
 }
 </style>
 </head>
 
 <body>
+    <main class="wrap">
+        <section class="card">
+            <div class="logo-shell">
+                <img src="logo.png?v=3" class="logo" alt="Hartford Logic LLC logo">
+            </div>
 
-<div class="container">
+            <div class="badge">Private Development Underway</div>
 
-    <!-- LOGO -->
-    <img src="logo.png" class="logo" alt="Hartford Logic Logo">
+            <h1>
+                Structured Systems.<br>
+                <span class="accent">Defensible Logic.</span>
+            </h1>
 
-    <!-- STATUS BADGE -->
-    <div class="badge">Private Development Underway</div>
+            <div class="rule"></div>
 
-    <!-- HEADLINE -->
-    <h1>Structured Systems.<br>Defensible Logic.</h1>
+            <div class="tagline">
+                Advanced systems research and development focused on verification frameworks,
+                resilient architectures, and structured analysis technologies.
+            </div>
 
-    <!-- DESCRIPTION -->
-    <div class="tagline">
-        Advanced systems research and development focused on verification frameworks,
-        resilient architectures, and structured analysis technologies.
-    </div>
-
-    <!-- FOOTER -->
-    <div class="footer">
-        © 2026 Hartford Logic LLC
-    </div>
-
-</div>
-
+            <div class="footer">
+                © 2026 Hartford Logic LLC
+            </div>
+        </section>
+    </main>
 </body>
 </html>
