@@ -1,4 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hartford Logic | Where evidence ends and judgment begins.</title><meta name="description" content="Hartford Logic develops patent-pending deterministic evidence-state measurement technology."><style>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hartford Logic | Public Falsification Benchmark</title>
+  <meta name="description" content="Hartford Logic controlled falsification benchmark for deterministic evidence-state measurement.">
+  <style>
+
 
 :root{
   --bg:#050505;
@@ -261,8 +269,8 @@ footer{
 .matchline{margin:20px 0 30px;padding:15px 18px;border-left:3px solid var(--gold);background:#0a0908;color:#eadbc4;font-size:1rem}
 .boundary-flow{display:grid;grid-template-columns:1fr auto 1.25fr auto 1fr auto 1fr;gap:12px;align-items:center;margin:34px 0;padding:24px;border:1px solid var(--line);border-radius:14px;background:#0a0908;text-align:center}.boundary-flow div{padding:16px 10px;border:1px solid #29231c;border-radius:10px;color:#d8cbb9}.boundary-flow span{color:var(--gold);font-size:1.2rem}.boundary-flow .boundary-core{border-color:var(--gold);color:#f0dfc5}@media(max-width:760px){.boundary-flow{grid-template-columns:1fr}.boundary-flow span{transform:rotate(90deg)}}
 
-</style>
-<style>
+
+
 :root{--text:#e7ded0;--muted:#b8ad9f;}
 body{color:var(--text);}
 .hero-name{font-size:clamp(1.45rem,2.7vw,2.35rem);font-weight:600;letter-spacing:.30em;text-indent:.30em;color:#d9ad6b;margin-bottom:22px;}
@@ -273,8 +281,8 @@ body{color:var(--text);}
 .about-wordmark{font-size:clamp(1.45rem,2.7vw,2.35rem);font-weight:600;letter-spacing:.24em;color:#d9ad6b;margin-bottom:28px;}
 .hero-copy{line-height:1.72;}
 .hero-inner{max-width:960px;}
-</style>
-<style>
+
+
 :root{--text:#ddd3c5;--muted:#b3a697}
 .hero-logo-new{width:clamp(100px,9vw,135px)!important;margin:0 auto 14px!important}
 .hero h1,.hero-announcement,.question,section h2,.quote,.card h3,.not h3{color:#e2d8ca!important}
@@ -285,8 +293,8 @@ section h2 + .copy{margin-top:22px}.copy + .copy{margin-top:16px}
 .sf-resolved{border-color:#6f9069}.sf-indeterminate{border-color:#aa7749}.sf-invalid{border-color:#8d5e5e}
 .sf-branches{gap:14px}
 @media(max-width:800px){section{padding:66px 0}.hero-logo-new{width:105px!important}}
-</style>
-<style>
+
+
 /* Final emphasis pass for the evidence-state flow */
 .sf-measure{
   border:2px solid #d6a24f !important;
@@ -342,6 +350,16 @@ section h2 + .copy{margin-top:22px}.copy + .copy{margin-top:16px}
 }
 .sf-node{color:#dfd5c7}
 .sf-node span{color:#b8aa9b}
+
+
+/* Benchmark page uses the exact Hartford index visual system */
+body.benchmark-page{background:var(--bg)!important;color:var(--text)!important}
+.benchmark-page .benchmark-hero h1{color:var(--text)}
+.benchmark-page .benchmark-lead{color:#c1b4a5;line-height:1.72}
+.benchmark-page section{padding:88px 0}
+.benchmark-page .benchmark-intro{padding:62px 0}
+@media(max-width:800px){.benchmark-page section{padding:66px 0}}
+
 </style>
 
 <style>
@@ -367,106 +385,165 @@ radial-gradient(ellipse at 50% 100%,#1d1a17 0,#111211 34%,#080a0a 63%,#030404 79
 .demo-callout h3{margin-bottom:10px}.demo-callout .buttons{margin-top:18px}
 @media(max-width:800px){.horizon{height:315px}.horizon:before{bottom:78px;height:175px;width:128vw}.horizon:after{bottom:220px;width:90vw}}
 </style>
-</head><body>
-<nav><div class="wrap navin"><a class="brand text-brand" href="#top"><span>Hartford Logic</span></a><div class="links"><a href="https://hartfordlogic.com/#problem">The Problem</a><a href="https://hartfordlogic.com/#technology">Technology</a><a href="https://hartfordlogic.com/benchmark.html">Benchmark</a><a href="https://youtu.be/2mZydrP13K4" target="_blank" rel="noopener">Demo</a><a href="https://hartfordlogic.com/#challenge">Challenge</a><a href="https://hartfordlogic.com/#about">About</a></div></div></nav>
-<main id="top"><header class="hero">
-<div class="wrap hero-inner">
-<img class="hero-logo-new" src="assets/HartfordLogo.png" alt="Hartford Logic emblem">
-<div class="hero-name">HARTFORD LOGIC</div>
-  <div class="hero-rule"></div>
-  <h1>Where evidence ends and judgment begins.</h1>
-  <div class="hero-rule short"></div>
-
-  <div class="reveal-label">Patent-pending technology</div>
-  <h2 class="hero-announcement">Deterministic evidence-state measurement.</h2>
-
-  <p class="hero-copy">Systems make decisions from records. Those records may be authentic, traceable, and correctly cited, yet still support materially different operational states. That creates a gap between having reliable records and having evidence that has actually resolved.</p>
-
-  <div class="question">Has the evidence actually earned a single operational state?</div>
-  <div class="answer">Hartford Logic measures that condition.</div>
-
-  <div class="buttons hero-buttons">
-    <a class="btn primary" href="https://hartfordlogic.com/#technology">Explore the technology</a>
-    <a class="btn" href="https://hartfordlogic.com/benchmark.html">View the benchmark</a><a class="btn" href="https://youtu.be/2mZydrP13K4" target="_blank" rel="noopener">Watch the worked examples</a>
-  </div>
-</div>
-</header>
-<section id="problem"><div class="wrap"><div class="kicker">The missing measurement</div><h2>A model can be perfectly grounded to a conflicted record.</h2><p class="copy">Provenance can establish where evidence came from. Traceability can establish what evidence was used. Explainability can describe how a conclusion was reached. Those controls do not necessarily establish whether the admitted evidence itself has resolved to one materially defensible operational state.</p><div class="quote">Before reasoning over the record, measure what the record permits.</div>
-<div class="control-table">
-<div class="control-row control-head"><span>Control</span><span>Question answered</span></div>
-<div class="control-row"><strong>Provenance</strong><span>Where did the evidence come from?</span></div>
-<div class="control-row"><strong>Traceability</strong><span>What evidence was used?</span></div>
-<div class="control-row"><strong>Grounding</strong><span>Is the output supported by retrieved evidence?</span></div>
-<div class="control-row"><strong>Explainability</strong><span>Why did the system reach this conclusion?</span></div>
-<div class="control-row control-highlight"><strong>Evidence-state measurement</strong><span>Has the admitted evidence resolved to one operational state?</span></div>
-</div>
-<p class="small">These controls are complementary. Together they tell us important things about the evidence and the reasoning built on it. Hartford Logic addresses the remaining question: has the admitted evidence itself resolved to one operational state?</p><div class="flow flow-arrows"><div>Reality becomes records</div><span class="flow-arrow">→</span><div>Evidence is evaluated</div><span class="flow-arrow">→</span><div>Has it structurally resolved?</div><span class="flow-arrow">→</span><div>Judgment or action follows</div></div></div></section>
-<section id="technology"><div class="wrap"><div class="kicker">The technology</div><h2>Evidence state as a measurable system property.</h2><p class="copy">That is the gap Hartford Logic is designed to measure. Its deterministic measurement layer evaluates admitted evidence before downstream judgment. It measures whether the evidence structurally supports one operationally defensible state, whether materially different states remain supported, or whether the evidence cannot support a valid determination under the defined requirements.</p><div class="states"><div class="card"><div class="label">ONE STATE SUPPORTED</div><h3>Resolved</h3><p class="small">The admitted evidence supports one operationally defensible state under the defined requirements.</p></div><div class="card"><div class="label">MULTIPLE STATES SUPPORTED</div><h3>Multiple States</h3><p class="small">Materially different operational states remain supported by the admitted evidence.</p></div><div class="card"><div class="label">REQUIREMENTS NOT SATISFIED</div><h3>Not Evaluable</h3><p class="small">The evidence cannot support a valid determination under the defined requirements.</p></div></div><div class="not"><h3>Measurement before judgment.</h3>
-<p class="copy">Hartford Logic measures what the admitted evidence has earned under the defined requirements and constraints.</p>
-<p class="copy">A resolved evidence state means that, under the defined requirements and constraints, the admitted evidence supports one operationally defensible state. Judgment and action remain downstream.</p>
-<p class="copy"><strong>Hartford Logic measures the condition. The downstream system determines what to do about it.</strong></p></div>
-<div class="system-flow-wrap">
-  <div class="system-flow-title">Enterprise evidence decision flow</div>
-  <div class="system-flow">
-    <div class="sf-node">Reality<span>The event that actually occurred</span></div>
-    <div class="sf-down">↓</div>
-    <div class="sf-node">Records<span>Logs, documents, databases, sensors, testimony, system outputs</span></div>
-    <div class="sf-down">↓</div>
-    <div class="sf-node">Evidence assembly<span>Assemble and normalize the available evidentiary record</span></div>
-    <div class="sf-down">↓</div>
-    <div class="sf-node sf-measure">Deterministic evidence-state measurement<span>Measure whether the admitted evidence has earned a single operational state</span></div>
-    <div class="sf-down">↓</div>
-    <div class="sf-branches">
-      <div class="sf-branch sf-resolved"><b>One operationally defensible state</b><span>Evidence has resolved under the defined requirements</span></div>
-      <div class="sf-branch sf-indeterminate"><b>Multiple operationally defensible states</b><span>Materially different states remain supported</span></div>
-      <div class="sf-branch sf-invalid"><b>No valid determination</b><span>Defined requirements are not satisfied</span></div>
+</head>
+<body class="benchmark-page">
+<nav><div class="wrap navin"><a class="brand text-brand" href="https://hartfordlogic.com/"><span>Hartford Logic</span></a><div class="links"><a href="https://hartfordlogic.com/#problem">The Problem</a><a href="https://hartfordlogic.com/#technology">Technology</a><a class="active" href="https://hartfordlogic.com/benchmark.html">Benchmark</a><a href="https://youtu.be/2mZydrP13K4" target="_blank" rel="noopener">Demo</a><a href="#challenge">Challenge</a><a href="https://hartfordlogic.com/#about">About</a></div></div></nav>
+<main>
+<header class="benchmark-hero">
+  <div class="wrap benchmark-hero-grid">
+    <div>
+      <div class="kicker">Public falsification benchmark</div>
+      <h1>A controlled test of evidentiary-state measurement.</h1>
+      <p class="benchmark-lead">A synthetic medication-administration workflow with known evidence, known constraints, and a predetermined answer key. The same 80 operational events are evaluated across six evidentiary stages.</p>
+      <p class="benchmark-lead"><strong>The records do not change. Only the admitted evidence used to interpret those records changes.</strong></p>
     </div>
-    <div class="sf-down">↓</div>
-    <div class="sf-node">Operational decision<span>Approve • deny • investigate • escalate • defer • request more evidence</span></div>
-    <div class="sf-down">↓</div>
-    <div class="sf-node">New records<span>The decision and resulting actions become part of the evidentiary record</span></div>
-    <div class="sf-loop">↻ Repeat</div>
+    <div class="benchmark-summary-card">
+      <div><b>80</b><span>operational events</span></div>
+      <div><b>6</b><span>evidentiary states</span></div>
+      <div><b>480</b><span>predetermined classifications</span></div>
+      <div><b>480 / 480</b><span>matched</span></div>
+    </div>
   </div>
-</div>
-</div></section>
-<section id="compartmentalized"><div class="wrap"><div class="kicker">Designed to be compartmentalized</div><h2>Keep sensitive evidence inside the operating environment.</h2><p class="copy">Hartford Logic's measurement layer does not require evidence to be sent to a language model or external inference service. It can operate locally within a controlled environment, separated from the systems whose records it evaluates.</p><div class="boundary-flow"><div>Enterprise records</div><span>→</span><div class="boundary-core">Deterministic measurement</div><span>→</span><div>Evidence-state signal</div><span>→</span><div>Human / AI / Automation</div></div><p class="copy">Structured evidence enters the measurement boundary. Deterministic evidentiary-state results leave it. Sensitive records can remain within the organization's security boundary while downstream systems receive a machine-readable indication of whether the admitted evidence has earned a single operational state.</p><p class="small">The public benchmark evaluates deterministic evidence-state classification. It is not a cybersecurity, isolation, or information-security performance benchmark.</p></div></section>
-<section id="benchmark"><div class="wrap"><div class="kicker">Controlled falsification benchmark</div><h2>Hold the operational record constant. Change only the admitted evidence.</h2><p class="copy">The controlled benchmark uses 80 operational events across six evidentiary stages. The underlying operational records remain unchanged. As additional bounded temporal evidence is admitted, the set of operational states supported by the evidence can expand or contract.</p><div class="metricline">80 → 70 → 65 → 70 → 75 → 80</div><p class="small">Events for which the admitted evidence supports one material temporal state at stages S0 through S5.</p><div class="not benchmark-insight"><h3>More evidence does not necessarily mean more resolution.</h3>
-<p class="copy">At the beginning of the benchmark, all 80 events appear resolved under the evidence then admitted. Additional clock-characterization evidence reveals uncertainty the original record did not expose. The number of resolved events falls to 70 and then 65. Later evidence constrains the admissible state space until all 80 again support one material temporal state.</p>
-<p class="copy"><strong>Additional evidence can reveal that an apparently resolved record was not sufficiently resolved at all.</strong></p></div>
-<div class="metrics"><div class="metric"><b>80</b><span>operational events</span></div><div class="metric"><b>6</b><span>evidentiary stages</span></div><div class="metric"><b>480</b><span>predetermined classifications</span></div><div class="metric"><b>480</b><span>observed classifications</span></div></div><div class="matchline"><strong>480 predetermined classifications. 480 observed classifications. 480 matches.</strong></div>
-<div class="stage"><div class="s">S0</div><div><b>Operational records only.</b><br><span class="small">No additional clock-characterization evidence admitted.</span></div><div class="result">80 / 0</div></div><div class="stage"><div class="s">S1</div><div><b>Pre-correction clock characterization admitted.</b><br><span class="small">Bounded offset and rate error reveal previously hidden temporal ambiguity.</span></div><div class="result">70 / 10</div></div><div class="stage"><div class="s">S2</div><div><b>Correction breakpoint and post-correction characterization admitted.</b><br><span class="small">Piecewise clock behavior reveals five additional unresolved events.</span></div><div class="result">65 / 15</div></div><div class="stage"><div class="s">S3</div><div><b>Tighter post-correction evidence admitted.</b><br><span class="small">Narrower admissible timing resolves five post-correction events.</span></div><div class="result">70 / 10</div></div><div class="stage"><div class="s">S4</div><div><b>Local pre-correction constraint admitted.</b><br><span class="small">Intersecting evidence resolves the pre-correction two-second-margin events.</span></div><div class="result">75 / 5</div></div><div class="stage"><div class="s">S5</div><div><b>Near-window synchronization evidence admitted.</b><br><span class="small">The remaining admissible timing windows narrow enough to resolve the final five events.</span></div><div class="result">80 / 0</div></div>
-<div class="math">R(t) = O + P|t - tₐ|<br><br>admissible time ∈ [t_recorded - R(t), t_recorded + R(t)]<br><br>material condition: t_verification &lt; t_pump</div><p class="copy">When multiple published temporal constraints apply to an event, their admissible intervals are intersected. For this controlled benchmark, pump-start timestamps are treated as the reference side with no additional temporal uncertainty.</p><p class="copy"><b>What the 480 matches mean:</b> the technology matched all 480 classifications predetermined for this controlled benchmark before first execution. It does not establish historical truth, general accuracy across arbitrary domains, or that the technology determines the most likely state.</p></div></section>
+</header>
+
+<section class="benchmark-intro">
+  <div class="wrap benchmark-three">
+    <div>
+      <div class="kicker">The scenario</div>
+      <p class="copy">A medication workflow records that administration was verified. A separate infusion-pump system records when infusion began. Both are ordinary operational records produced by different systems.</p>
+    </div>
+    <div>
+      <div class="kicker">The material relationship</div>
+      <div class="material-rule">Medication administration verification must be established before the infusion pump starts.</div>
+    </div>
+    <div>
+      <div class="kicker">The question we measure</div>
+      <p class="copy">Given the admitted evidence, has the required ordering been established to a single operationally defensible state, or do materially different states remain supported?</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">The experiment</div>
+    <h2>Same 80 events. Six evidentiary stages.</h2>
+    <p class="copy">Five additional pieces of evidence characterize the behavior of one medication-administration workstation clock, MED-WS-11. They are admitted sequentially. After each evidence addition, Hartford Logic evaluates the same 80 events again.</p>
+
+    <div class="benchmark-stage-row">
+      <div class="benchmark-stage"><span>S0</span><b>80 / 0</b><small>No additional clock evidence</small></div><div class="stage-arrow">→</div>
+      <div class="benchmark-stage"><span>S1</span><b>70 / 10</b><small>Pre-correction characterization</small></div><div class="stage-arrow">→</div>
+      <div class="benchmark-stage"><span>S2</span><b>65 / 15</b><small>Breakpoint + post-correction evidence</small></div><div class="stage-arrow">→</div>
+      <div class="benchmark-stage"><span>S3</span><b>70 / 10</b><small>Better post-correction evidence</small></div><div class="stage-arrow">→</div>
+      <div class="benchmark-stage"><span>S4</span><b>75 / 5</b><small>Additional local pre-correction evidence</small></div><div class="stage-arrow">→</div>
+      <div class="benchmark-stage final"><span>S5</span><b>80 / 0</b><small>Strong near-window synchronization evidence</small></div>
+    </div>
+
+    <div class="resolution-callout">
+      <h3>More evidence did not monotonically produce more resolution.</h3>
+      <p>The number of unresolved events first increased as additional evidence exposed uncertainty that the baseline record did not contain, then decreased as later evidence constrained the admissible states. The system is evaluating what the currently admitted evidence permits.</p>
+    </div>
+  </div>
+</section>
+
+<section class="example-section">
+  <div class="wrap">
+    <div class="kicker">Worked example</div>
+    <h2>One event. Same records. Different admitted evidence.</h2>
+    <p class="copy">The example below uses one MED-WS-11 event to show how the classification changes when the admitted evidence changes.</p>
+
+    <div class="worked-grid">
+      <div class="worked-records">
+        <div class="mini-label">Recorded times</div>
+        <div class="time-card"><span>Medication verification</span><b>17:10:32</b><small>recorded time</small></div>
+        <div class="time-arrow">↓</div>
+        <div class="time-card"><span>Infusion pump start</span><b>17:10:35</b><small>recorded time</small></div>
+      </div>
+
+      <div class="worked-analysis indeterminate-panel">
+        <div class="mini-label">Stage 2</div>
+        <h3>Materially different temporal states remain supported.</h3>
+        <div class="calc">Offset ≤ ±3.20 s<br>Rate ≤ ±60 ppm<br><br>R(t) = O + P|t − tₐ|<br>R = 3.20 + (60 × 10⁻⁶ × 32)<br><strong>R = 3.20192 s</strong></div>
+        <p>Admissible verification interval:</p>
+        <div class="interval">17:10:28.79808 → 17:10:35.20192</div>
+        <p class="small">The admissible interval crosses the 17:10:35 pump-start boundary.</p>
+      </div>
+
+      <div class="worked-analysis resolved-panel">
+        <div class="mini-label">Stage 3</div>
+        <h3>One material temporal state is supported.</h3>
+        <div class="calc">Offset ≤ ±2.40 s<br>Rate ≤ ±60 ppm<br><br>R(t) = O + P|t − tₐ|<br>R = 2.40 + (60 × 10⁻⁶ × 32)<br><strong>R = 2.40192 s</strong></div>
+        <p>Admissible verification interval:</p>
+        <div class="interval">17:10:29.59808 → 17:10:34.40192</div>
+        <p class="small">Every admissible verification time is before the 17:10:35 pump-start boundary.</p>
+      </div>
+    </div>
+
+    <div class="key-point">The records did not change. The event did not change. The evidence changed what could be established about the event.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">The result</div>
+    <div class="result-grid">
+      <div class="result-number"><span>Predetermined</span><b>480</b><small>classifications</small></div>
+      <div class="result-number"><span>Observed</span><b>480</b><small>classifications</small></div>
+    </div><div class="matchline"><strong>480 predetermined classifications. 480 observed classifications. 480 matches.</strong></div>
+    <div class="result-meaning">
+      <h3>What the result establishes</h3>
+      <p class="copy">Under the published evidence requirements and constraints, Hartford Logic matched all 480 classifications predetermined for the controlled benchmark before first execution. Repeated execution with unchanged evidence and configuration produced identical substantive results.</p>
+      <p class="scope"><b>Scope:</b> This is a controlled test of deterministic evidence-state measurement. It is not a validation of every evidentiary domain or a real-world clinical determination.</p>
+    </div>
+    <div class="not">
+      <h3>Why temporal evidence?</h3>
+      <p class="copy">Temporal uncertainty provides a precise, bounded, and independently calculable way to test whether changing evidence changes what a fixed record can support.</p>
+      <p class="mechanism"><b>The clock is the experimental mechanism. Evidence-state measurement is what is being tested.</b></p><p class="copy">When multiple published temporal constraints apply to an event, their admissible intervals are intersected. For this controlled benchmark, pump-start timestamps are treated as the reference side with no additional temporal uncertainty.</p>
+    </div>
+  </div>
+</section>
+
 
 <section id="demo"><div class="wrap">
 <div class="kicker">Benchmark demonstration</div>
-<h2>See the measurement operate against the benchmark evidence.</h2>
+<h2>Watch the published evidence move through the measurement.</h2>
 <div class="demo-callout"><h3>Hartford Logic v1.0 Demo</h3>
-<p class="copy">A 4:37 technical demonstration using the same operational records and temporal evidence published in the Hartford Logic Benchmark v1.0. The interface shows evidence admission, changing evidence states, and the resulting classifications while keeping internal implementation details private.</p>
-<div class="buttons"><a class="btn primary" href="https://youtu.be/2mZydrP13K4" target="_blank" rel="noopener">Watch the demo</a><a class="btn" href="https://hartfordlogic.com/benchmark.html">Open Benchmark v1.0</a></div>
+<p class="copy">This 4:37 demonstration uses the same operational records and temporal evidence contained in Benchmark v1.0. It shows the benchmark evidence being admitted across stages and the resulting RESOLVED and MULTIPLE STATES classifications. The demonstration interface exposes what is needed to understand the measurement without exposing Hartford Logic's internal implementation.</p>
+<div class="buttons"><a class="btn primary" href="https://youtu.be/2mZydrP13K4" target="_blank" rel="noopener">Watch the demo</a><a class="btn" href="https://hartfordlogic.com/">Hartford Logic home</a></div>
 </div></div></section>
-<section id="challenge" class="challenge"><div class="wrap"><div class="kicker">Public challenge</div><h2>Don't take our word for it.</h2><p class="copy">The public benchmark is designed to be challenged without access to Hartford Logic's implementation. The records, admitted evidence, mathematical specification, predetermined answer key, worked examples, validation material, and cryptographic integrity information are available in the public benchmark package.</p><div class="quote">You do not need Hartford Logic's implementation to challenge the published classifications.</div><p class="copy"><b>To challenge a one-state classification:</b> produce a materially different operational state satisfying the same admitted evidence and constraints.<br><br><b>To challenge a multiple-state classification:</b> demonstrate that the same evidence and constraints force a unique material state.</p><div class="buttons"><a class="btn primary" href="https://hartfordlogic.com/benchmark.html">View the benchmark</a><a class="btn" href="https://github.com/HartfordLogic/Hartford-Logic-Benchmark" target="_blank" rel="noopener">GitHub repository</a><a class="btn" href="https://doi.org/10.5281/zenodo.22730361" target="_blank" rel="noopener">Zenodo DOI</a></div></div></section>
-<section id="why"><div class="wrap">
-<div class="kicker">Why it matters</div>
-<h2>Unresolved evidence can propagate.</h2>
-<p class="copy">A consequential decision may begin with records distributed across different systems, sources, authorities, timestamps, documents, observations, and prior decisions. Each record may be authentic. Each source may be traceable. Each citation may be correct. And the combined evidence may still permit more than one materially defensible operational state.</p>
-<div class="quote">A selected narrative can become an operational fact without the underlying evidence ever having resolved.</div>
-<p class="copy">If that condition is not measured before downstream reasoning, a human or automated system may select one state and propagate it into subsequent decisions and new records. Those new records can then become evidence for the next decision.</p>
-</div></section>
+<section id="challenge" class="challenge">
+  <div class="wrap">
+    <div class="kicker">Public challenge</div>
+    <h2>Don't take our word for it.</h2>
+    <p class="copy">The public benchmark is designed to be challenged without access to Hartford Logic's implementation. The records, admitted evidence, mathematical specification, predetermined answer key, worked examples, validation material, and cryptographic integrity information are available in the public package.</p>
+    <div class="quote">You do not need Hartford Logic's implementation to challenge the published classifications.</div>
+    <div class="challenge-grid">
+      <div class="challenge-card"><b>Challenge a one-state classification</b><span>Produce a materially different operational state satisfying the same admitted evidence and constraints.</span></div>
+      <div class="challenge-card"><b>Challenge a multiple-state classification</b><span>Demonstrate that the same evidence and constraints force a unique material state.</span></div>
+    </div>
+    <div class="release-actions">
+      <a class="btn" href="https://github.com/HartfordLogic/Hartford-Logic-Benchmark" target="_blank" rel="noopener">GitHub repository</a>
+      <a class="btn" href="https://doi.org/10.5281/zenodo.22730361" target="_blank" rel="noopener">Zenodo DOI</a>
+      <a class="btn" href="https://doi.org/10.5281/zenodo.22730361" target="_blank" rel="noopener">Benchmark v1.0</a>
+    </div>
+  </div>
+</section>
 
-<section id="applications"><div class="wrap">
-<div class="kicker">Where it applies</div>
-<h2>Built for evidence-dependent decisions.</h2>
-<p class="copy">Evidence-state measurement is designed for workflows in which consequential decisions are made from records rather than direct access to reality.</p>
-<p class="copy">Potential applications include investigations, digital forensics, audit and assurance, legal and evidentiary review, incident reconstruction, financial and operational reconciliation, and other high-consequence workflows involving heterogeneous evidence.</p>
-<div class="quote">Has the admitted evidence actually earned a single operational state?</div>
-</div></section>
+<section class="benchmark-return">
+  <div class="wrap benchmark-return-grid">
+    <div>
+      <div class="kicker">From controlled evidence to external evaluation</div>
+      <h2>The next phase is external.</h2>
+      <p class="copy">This benchmark was designed to make the measurement inspectable and falsifiable under controlled conditions. The next phase is evaluating where the same measurement adds value in real evidence-dependent workflows.</p><p class="small">Technical evaluation, integration, and licensing inquiries: <a href="mailto:tim@hartfordlogic.com">tim@hartfordlogic.com</a>.</p>
+    </div>
+    <div class="buttons">
+      <a class="btn primary" href="https://hartfordlogic.com/">Explore Hartford Logic</a>
+      <a class="btn" href="mailto:tim@hartfordlogic.com">Express Interest</a>
+    </div>
+  </div>
+</section>
 
-<section id="next" class="next-phase"><div class="wrap next-inner">
-<div class="kicker">The next phase</div>
-<h2>Be part of what comes next.</h2>
-<p class="copy">The controlled work is complete. The next phase is external.</p>
-<p class="copy">Hartford Logic is engaging with organizations interested in evaluating the technology against real evidence-dependent workflows.</p>
-<div class="quote next-hook">If this measurement could change how your organization handles evidence, we want to hear from you.</div>
-<div class="buttons"><a class="btn primary" href="mailto:tim@hartfordlogic.com">Express interest →</a></div>
-</div></section>
-<section id="about"><div class="wrap"><div class="about-wordmark">HARTFORD LOGIC</div><div class="kicker">Hartford Logic LLC</div><h2>Deterministic measurement at the boundary between evidence and judgment.</h2><p class="copy">Hartford Logic develops technology for evidence-dependent workflows in which consequential decisions are made from records rather than direct access to reality. The work focuses on whether admitted evidence has structurally resolved before a human, AI, or automated system acts.</p><p class="small">Patent pending. Technical evaluation, integration, and licensing inquiries: <a href="mailto:tim@hartfordlogic.com">tim@hartfordlogic.com</a>.</p></div></section><section class="horizon" aria-label="Hartford Logic"><div class="horizon-glow"></div><div class="earth"></div><div class="horizon-ribbon"><span>HARTFORD LOGIC</span><b>WHERE EVIDENCE ENDS AND JUDGMENT BEGINS.</b></div></section></main><footer><div class="wrap footerline"><span>© 2026 Hartford Logic LLC</span><span>Where evidence ends and judgment begins.</span></div></footer></body></html>
+<section class="horizon" aria-label="Hartford Logic"><div class="horizon-glow"></div><div class="earth"></div><div class="horizon-ribbon"><span>HARTFORD LOGIC</span><b>WHERE EVIDENCE ENDS AND JUDGMENT BEGINS.</b></div></section>
+</main>
+<footer><div class="wrap footerline"><span>© 2026 Hartford Logic LLC</span><span>Where evidence ends and judgment begins.</span></div></footer>
+</body>
+</html>
