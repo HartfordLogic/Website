@@ -437,13 +437,96 @@ radial-gradient(ellipse at 50% 100%,#1d1a17 0,#111211 34%,#080a0a 63%,#030404 79
 <div class="stage"><div class="s">S0</div><div><b>Operational records only.</b><br><span class="small">No additional clock-characterization evidence admitted.</span></div><div class="result">80 / 0</div></div><div class="stage"><div class="s">S1</div><div><b>Pre-correction clock characterization admitted.</b><br><span class="small">Bounded offset and rate error reveal previously hidden temporal ambiguity.</span></div><div class="result">70 / 10</div></div><div class="stage"><div class="s">S2</div><div><b>Correction breakpoint and post-correction characterization admitted.</b><br><span class="small">Piecewise clock behavior reveals five additional unresolved events.</span></div><div class="result">65 / 15</div></div><div class="stage"><div class="s">S3</div><div><b>Tighter post-correction evidence admitted.</b><br><span class="small">Narrower admissible timing resolves five post-correction events.</span></div><div class="result">70 / 10</div></div><div class="stage"><div class="s">S4</div><div><b>Local pre-correction constraint admitted.</b><br><span class="small">Intersecting evidence resolves the pre-correction two-second-margin events.</span></div><div class="result">75 / 5</div></div><div class="stage"><div class="s">S5</div><div><b>Near-window synchronization evidence admitted.</b><br><span class="small">The remaining admissible timing windows narrow enough to resolve the final five events.</span></div><div class="result">80 / 0</div></div>
 <div class="math">R(t) = O + P|t - tₐ|<br><br>admissible time ∈ [t_recorded - R(t), t_recorded + R(t)]<br><br>material condition: t_verification &lt; t_pump</div><p class="copy">When multiple published temporal constraints apply to an event, their admissible intervals are intersected. For this controlled benchmark, pump-start timestamps are treated as the reference side with no additional temporal uncertainty.</p><p class="copy"><b>What the 480 matches mean:</b> the technology matched all 480 classifications predetermined for this controlled benchmark before first execution. It does not establish historical truth, general accuracy across arbitrary domains, or that the technology determines the most likely state.</p></div></section>
 
-<section id="demo"><div class="wrap">
-<div class="kicker">Benchmark demonstration</div>
-<h2>See the measurement operate against the benchmark evidence.</h2>
-<div class="demo-callout"><h3>Hartford Logic v1.0 Demo</h3>
-<p class="copy">A 4:37 technical demonstration using the same operational records and temporal evidence published in the Hartford Logic Benchmark v1.0. The interface shows evidence admission, changing evidence states, and the resulting classifications while keeping internal implementation details private.</p>
-<div class="buttons"><a class="btn primary" href="https://youtu.be/2mZydrP13K4" target="_blank" rel="noopener">Watch the demo</a><a class="btn" href="https://hartfordlogic.com/benchmark.html">Open Benchmark v1.0</a></div>
-</div></div></section>
+<section id="demo">
+  <div class="wrap">
+    <div class="kicker">Benchmark demonstration</div>
+    <h2>See the measurement operate against the benchmark evidence.</h2>
+
+    <div class="demo-callout">
+      <h3>Hartford Logic v1.0 Demo</h3>
+
+      <p class="copy">
+        A 4:37 technical demonstration using the same operational records and temporal evidence
+        published in the Hartford Logic Benchmark v1.0. The interface shows evidence admission,
+        changing evidence states, and the resulting classifications while keeping internal
+        implementation details private.
+      </p>
+
+      <a href="https://youtu.be/2mZydrP13K4"
+         target="_blank"
+         rel="noopener"
+         style="
+           display:block;
+           position:relative;
+           max-width:820px;
+           margin:28px auto 0;
+           border:1px solid #8b6940;
+           border-radius:14px;
+           overflow:hidden;
+           background:#080808;
+         ">
+
+        <img
+          src="https://img.youtube.com/vi/2mZydrP13K4/maxresdefault.jpg"
+          alt="Watch the Hartford Logic v1.0 deterministic evidence-state measurement demonstration"
+          style="
+            display:block;
+            width:100%;
+            height:auto;
+          ">
+
+        <div style="
+          position:absolute;
+          inset:0;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          background:rgba(0,0,0,.16);
+        ">
+          <div style="
+            width:78px;
+            height:78px;
+            border-radius:50%;
+            background:rgba(5,5,5,.88);
+            border:2px solid #d5aa68;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            box-shadow:0 0 30px rgba(0,0,0,.7);
+          ">
+            <span style="
+              color:#d5aa68;
+              font-size:32px;
+              margin-left:5px;
+              line-height:1;
+            ">▶</span>
+          </div>
+        </div>
+      </a>
+
+      <p class="small" style="text-align:center;margin-top:10px;">
+        Watch the 4:37 technical demonstration
+      </p>
+
+      <p class="small" style="margin-top:20px;">
+        Demo note: The discovery screen displays the complete public Benchmark v1.0 package.
+        Only the configured operational evidence sources and staged temporal evidence are admitted
+        to evaluation. Predetermined classifications, observed results, documentation, and
+        validation files are excluded from evaluation.
+      </p>
+
+      <div class="buttons">
+        <a class="btn primary"
+           href="https://youtu.be/2mZydrP13K4"
+           target="_blank"
+           rel="noopener">Watch the demo</a>
+
+        <a class="btn"
+           href="https://hartfordlogic.com/benchmark.html">Open Benchmark v1.0</a>
+      </div>
+    </div>
+  </div>
+</section>
 <section id="challenge" class="challenge"><div class="wrap"><div class="kicker">Public challenge</div><h2>Don't take our word for it.</h2><p class="copy">The public benchmark is designed to be challenged without access to Hartford Logic's implementation. The records, admitted evidence, mathematical specification, predetermined answer key, worked examples, validation material, and cryptographic integrity information are available in the public benchmark package.</p><div class="quote">You do not need Hartford Logic's implementation to challenge the published classifications.</div><p class="copy"><b>To challenge a one-state classification:</b> produce a materially different operational state satisfying the same admitted evidence and constraints.<br><br><b>To challenge a multiple-state classification:</b> demonstrate that the same evidence and constraints force a unique material state.</p><div class="buttons"><a class="btn primary" href="https://hartfordlogic.com/benchmark.html">View the benchmark</a><a class="btn" href="https://github.com/HartfordLogic/Hartford-Logic-Benchmark" target="_blank" rel="noopener">GitHub repository</a><a class="btn" href="https://doi.org/10.5281/zenodo.22730362" target="_blank" rel="noopener">Zenodo DOI</a></div></div></section>
 <section id="why"><div class="wrap">
 <div class="kicker">Why it matters</div>
